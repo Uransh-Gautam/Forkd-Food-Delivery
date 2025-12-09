@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Fork'd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">Fork'd</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" style="background:none; font-size: 20px;">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <h1>Our Menu</h1>
+      <p>Carefully curated dishes made with the finest ingredients</p>
+    </section>
+
+    <section class="menu-section">
+      <div class="container">
+        <div class="menu-categories">
+          <button class="menu-category-btn active" data-category="all">All</button>
+          <button class="menu-category-btn" data-category="starters">Starters</button>
+          <button class="menu-category-btn" data-category="main-course">Main Course</button>
+          <button class="menu-category-btn" data-category="breads-rice">Breads & Rice</button>
+          <button class="menu-category-btn" data-category="desserts">Desserts</button>
+          <button class="menu-category-btn" data-category="beverages">Beverages</button>
+        </div>
+
+        <div class="menu-grid">
+          <div class="menu-item" data-category="main-course">
+            <div class="menu-item-image">
+              <img src="images/butter-chicken.png" alt="Butter Chicken">
+            </div>
+            <div class="menu-item-content">
+              <h3>Butter Chicken</h3>
+              <p>Tender chicken cooked in a rich, creamy tomato and butter gravy.</p>
+              <div class="menu-item-footer">
+                <span class="price">₹450</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="main-course">
+            <div class="menu-item-image">
+              <img src="images/paneer-butter-masala.png" alt="Paneer Butter Masala">
+            </div>
+            <div class="menu-item-content">
+              <h3>Paneer Butter Masala</h3>
+              <p>Soft cottage cheese cubes in a savory, creamy tomato sauce.</p>
+              <div class="menu-item-footer">
+                <span class="price">₹380</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="main-course">
+            <div class="menu-item-image">
+              <img src="images/dal-makhani.png" alt="Dal Makhani">
+            </div>
+            <div class="menu-item-content">
+              <h3>Dal Makhani</h3>
+              <p>Slow-cooked black lentils with kidney beans, butter, and cream.</p>
+              <div class="menu-item-footer">
+                <span class="price">₹320</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="starters">
+            <div class="menu-item-image">
+              <img src="images/chicken-tikka.png" alt="Chicken Tikka">
+            </div>
+            <div class="menu-item-content">
+              <h3>Chicken Tikka</h3>
+              <p>Boneless chicken pieces marinated in yogurt and spices, grilled in tandoor.</p>
+              <div class="menu-item-footer">
+                <span class="price">₹400</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="breads-rice">
+            <div class="menu-item-image">
+              <img src="images/hyderabadi-biryani.png" alt="Hyderabadi Biryani">
+            </div>
+            <div class="menu-item-content">
+              <h3>Hyderabadi Biryani</h3>
+              <p>Aromatic basmati rice cooked with spices and choice of meat or veg.</p>
+              <div class="menu-item-footer">
+                <span class="price">₹450</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="breads-rice">
+            <div class="menu-item-image">
+              <img src="images/garlic-naan.png" alt="Garlic Naan">
+            </div>
+            <div class="menu-item-content">
+              <h3>Garlic Naan</h3>
+              <p>Soft, leavened flatbread topped with chopped garlic and butter.</p>
+              <div class="menu-item-footer">
+                <span class="price">₹80</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="desserts">
+            <div class="menu-item-image">
+              <img src="images/gulab-jamun.png" alt="Gulab Jamun">
+            </div>
+            <div class="menu-item-content">
+              <h3>Gulab Jamun</h3>
+              <p>Deep-fried milk solids soaked in light sugar syrup flavored with cardamom.</p>
+              <div class="menu-item-footer">
+                <span class="price">₹150</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="desserts">
+            <div class="menu-item-image">
+              <img src="images/rasmalai.png" alt="Rasmalai">
+            </div>
+            <div class="menu-item-content">
+              <h3>Rasmalai</h3>
+              <p>Flattened cheesecake balls soaked in malai (clotted cream) flavored with cardamom.</p>
+              <div class="menu-item-footer">
+                <span class="price">₹180</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="beverages">
+            <div class="menu-item-image">
+              <img src="images/mango-lassi.png" alt="Mango Lassi">
+            </div>
+            <div class="menu-item-content">
+              <h3>Mango Lassi</h3>
+              <p>A refreshing yogurt-based drink made with sweet mango pulp.</p>
+              <div class="menu-item-footer">
+                <span class="price">₹120</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fork'd. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

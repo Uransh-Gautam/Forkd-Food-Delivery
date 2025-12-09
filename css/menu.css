@@ -1,0 +1,116 @@
+.menu-section {
+    padding: 60px 20px;
+    background-color: var(--bg-secondary);
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.menu-category-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-category-btn:hover,
+.menu-category-btn.active {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--bg-card);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.menu-item {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.menu-item-image {
+    width: 100%;
+    height: 180px;
+    background-color: var(--bg-secondary);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-item-image img {
+    transform: scale(1.05);
+}
+
+.menu-item-content {
+    padding: 16px;
+}
+
+.menu-item h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.menu-item p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.menu-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item .price {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-categories {
+        gap: 10px;
+    }
+
+    .menu-category-btn {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}
